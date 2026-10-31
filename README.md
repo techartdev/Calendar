@@ -60,6 +60,13 @@ Based on the original project by [TechArtDev](https://github.com/techartdev/Cale
 
 Contributions are welcome! If you have suggestions for improvements or bug fixes, please feel free to fork the repository, make your changes, and submit a pull request.
 
+## Authors
+
+- **TechArtDev** - Original author ([Original Repository](https://github.com/techartdev/Calendar))
+- **Taras Zakharchenko** ([@player999](https://github.com/player999)) - Co-author (Settings menu, multi-ICS parsing & scrolling, custom 3x5 font, multilingual localization, ISO/custom date formats)
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+- Copyright (c) 2024 TechArtDev
+- Copyright (c) 2026 Taras Zakharchenko (player999)
