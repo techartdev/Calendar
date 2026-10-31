@@ -1,9 +1,6 @@
 /**
  * Flipper Zero Calendar Application
- *
- * Original author: TechArtDev (https://github.com/techartdev/Calendar)
- * Co-author: Taras Zakharchenko / player999 (https://github.com/player999/flipper-calendar)
- * License: MIT
+ * https://github.com/techartdev/Calendar
  */
 
 #include "calendar.i.h"
