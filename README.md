@@ -1,6 +1,6 @@
 # Simple Calendar App for Flipper Zero
 
-![Screenshot](screenshots/ss0.png)
+![Default Calendar View](screenshots/ss0.png)
 
 This repository contains the source code for a calendar application designed for the Flipper Zero device. The app provides a monthly calendar grid with optional Workweek (WW) numbers, multi-calendar (.ics) holiday tracking, configurable date formats, multilingual support, and persistent settings.
 
@@ -19,6 +19,20 @@ This repository contains the source code for a calendar application designed for
   - **OK (Short Press):** Cycle through holidays of the month or return to today.
   - **OK (Long Press):** Open Settings menu.
   - **Back Button:** Exit Settings or exit application.
+
+## Screenshots
+
+| Default View (ISO, No WW, Mon start) | Settings Menu (`VariableItemList`) |
+| :---: | :---: |
+| ![Default Main](screenshots/ss0.png) | ![Settings Menu](screenshots/ss_settings.png) |
+
+| Ukrainian Locale (DD.MM.YY, WW ON) | German Locale (MM/DD/YY, WW ON) |
+| :---: | :---: |
+| ![Ukrainian EU](screenshots/ss_ukrainian_ww.png) | ![German US](screenshots/ss_german_us.png) |
+
+| iCalendar Holiday Marquee (Running text) |
+| :---: |
+| ![Holiday Marquee](screenshots/ss_holiday_marquee.png) |
 
 ## Installation
 
