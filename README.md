@@ -1,23 +1,50 @@
 # Simple Calendar App for Flipper Zero
 
-![Screenshot](screenshots/ss0.png)
+![Default Calendar View](screenshots/ss0.png)
 
-This repository contains the source code for a simple calendar application designed for the Flipper Zero device. The app provides an intuitive display of the days of the month and supports basic navigation to explore different months and years.
+This repository contains the source code for a calendar application designed for the Flipper Zero device. The app provides a monthly calendar grid with optional Workweek (WW) numbers, multi-calendar (.ics) holiday tracking, configurable date formats, multilingual support, and persistent settings.
 
 ## Features
 
-- **Monthly View:** Display the days of the current month.
+- **Monthly View:** Display the days of the month with a compact 3x5 font and dynamic 5- or 6-row layout.
+- **Settings Menu:** Hold `OK` (`Hold OK: Set`) to open settings:
+  - **Language:** English, Ukrainian, Polish, German.
+  - **Workweek (WW):** Toggle WW column ON or OFF.
+  - **Week Start:** Monday or Sunday.
+  - **Date Format:** EU (`DD.MM.YY`), ISO (`YYYY-MM-DD`), US (`MM/DD/YY`).
+- **iCalendar (.ics) Support:** Automatically loads holidays from `.ics` files in `/ext/apps_data/techart_calendar/` and scrolls holiday names on the side panel.
 - **Navigation:** 
-  - **Left Button:** Move to the previous month.
-  - **Right Button:** Move to the next month.
-  - **Top Button:** Move to the next year.
-  - **Bottom Button:** Move to the previous year.
+  - **Left / Right:** Move between months.
+  - **Up / Down:** Move between years.
+  - **OK (Short Press):** Cycle through holidays of the month or return to today.
+  - **OK (Long Press):** Open Settings menu.
+  - **Back Button:** Exit Settings or exit application.
+
+## Screenshots
+
+| Default View (ISO, No WW, Mon start) | Settings Menu (`VariableItemList`) |
+| :---: | :---: |
+| ![Default Main](screenshots/ss0.png) | ![Settings Menu](screenshots/ss_settings.png) |
+
+| Ukrainian Locale (DD.MM.YY, WW ON) | German Locale (MM/DD/YY, WW ON) |
+| :---: | :---: |
+| ![Ukrainian EU](screenshots/ss_ukrainian_ww.png) | ![German US](screenshots/ss_german_us.png) |
+
+| iCalendar Holiday Marquee (Running text) |
+| :---: |
+| ![Holiday Marquee](screenshots/ss_holiday_marquee.png) |
 
 ## Installation
 
 1. Clone the repository to your local machine.
-2. Follow the standard Flipper Zero development environment setup to build the application.
-3. Transfer the built application to your Flipper Zero device.
+2. Follow the standard Flipper Zero development environment setup to build the application:
+   ```bash
+   ufbt
+   ```
+3. Transfer the built application to your Flipper Zero device:
+   ```bash
+   ufbt launch
+   ```
 
 ## Usage
 
@@ -26,6 +53,10 @@ After installation, navigate to the app on your Flipper Zero device and open it.
 ## Contributing
 
 Contributions are welcome! If you have suggestions for improvements or bug fixes, please feel free to fork the repository, make your changes, and submit a pull request.
+
+### Contributors
+
+- **Taras Zakharchenko** ([@player999](https://github.com/player999)) - Settings menu, multi-calendar (.ics) holiday support, localization, and date formats.
 
 ## License
 
