@@ -54,6 +54,10 @@ After installation, navigate to the app on your Flipper Zero device and open it.
 
 Contributions are welcome! If you have suggestions for improvements or bug fixes, please feel free to fork the repository, make your changes, and submit a pull request.
 
+### Contributors
+
+- **Taras Zakharchenko** ([@player999](https://github.com/player999)) - Settings menu, multi-calendar (.ics) holiday support, localization, and date formats.
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
